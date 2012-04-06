@@ -29,3 +29,8 @@ class Calculator(object):
         numbers = map(int,string.split(','))
         self._validate_numbers(numbers)
         return sum(numbers)
+        
+if __name__ == '__main__':
+    calculator = Calculator()
+    sum = calculator.add('123,45,65,78678')
+    print sum
